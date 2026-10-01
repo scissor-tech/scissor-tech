@@ -1,0 +1,24 @@
+/* Shared presentation dialog for the homepage and Research pages. */
+.site-header nav .video-presentation-trigger{display:inline-flex;align-items:center;justify-content:center;padding:8px 13px;border:1px solid #38616c;border-radius:3px;background:#102129;color:#7be5ed;font:inherit;line-height:1.4;white-space:nowrap;cursor:pointer}
+.site-header nav .video-presentation-trigger:hover{background:#17343e}
+.supplier-video-note{display:block;margin-top:9px;color:#98a9b4;font:12px/1.65 'Segoe UI',Arial,sans-serif}
+.supplier-video-link{display:inline;padding:0;border:0;border-bottom:1px solid #42646e;border-radius:0;background:none;color:#7be5ed;font:inherit;cursor:pointer;text-align:left}
+.supplier-video-link:hover{color:#eef3f1}
+.video-presentation-dialog{box-sizing:border-box;width:min(560px,calc(100vw - 36px));max-height:calc(100dvh - 40px);margin:auto;padding:36px;border:1px solid #385463;border-radius:5px;background:#0d141b;color:#eef3f1;overflow-y:auto;box-shadow:0 22px 80px #0009}
+.video-presentation-dialog::backdrop{background:#02070ddb}
+.video-presentation-dialog .video-presentation-close{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:36px;height:36px;padding:0;border:1px solid #385463;border-radius:3px;background:#14232c;color:#d6e5eb;font:26px/1 Arial,sans-serif;cursor:pointer}
+.video-presentation-dialog .video-presentation-close:hover{background:#243a46}
+.video-presentation-dialog .video-presentation-eyebrow{margin:0 35px 17px 0;color:#7be5ed;font:11px/1.6 Consolas,'Courier New',monospace;letter-spacing:1.2px}
+.video-presentation-dialog h2{margin:0 0 20px;font:600 34px/1.2 'Segoe UI',Arial,sans-serif;letter-spacing:-1px}
+.video-presentation-dialog #video-presentation-description{margin:0 0 28px;color:#b9cbd4;font:17px/1.7 'Segoe UI',Arial,sans-serif}
+.video-presentation-choices{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.video-presentation-dialog .video-choice{display:flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border:1px solid transparent;border-radius:3px;font:700 17px/1.3 'Segoe UI',Arial,sans-serif;text-decoration:none;cursor:pointer}
+.video-presentation-dialog .video-choice-green{background:#86ddb0;color:#071c12;border-color:#a1edc5}
+.video-presentation-dialog .video-choice-red{background:#b82238;color:#fff;border-color:#e9455a}
+.video-presentation-dialog .video-choice-green:hover{background:#a7ecc6}
+.video-presentation-dialog .video-choice-red:hover{background:#d42c43}
+.video-presentation-dialog .video-consent-note{margin:14px 0 0;color:#98a9b4;text-align:center;font:italic 14px/1.65 Georgia,'Times New Roman',serif}
+[data-video-trigger]:focus-visible,.video-presentation-dialog a:focus-visible,.video-presentation-dialog button:focus-visible{outline:2px solid #7be5ed;outline-offset:4px}
+html.video-presentation-open{overflow:hidden}
+@media(max-width:1280px){.site-header{flex-wrap:wrap}.site-header nav{flex-wrap:wrap;gap:14px 20px}}
+@media(max-width:650px){.site-header nav .video-presentation-trigger{padding:7px 12px}.video-presentation-dialog{padding:32px 23px 25px}.video-presentation-dialog h2{font-size:29px}.video-presentation-dialog #video-presentation-description{font-size:16px}}

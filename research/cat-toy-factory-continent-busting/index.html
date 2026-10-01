@@ -23,12 +23,12 @@
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="stylesheet" href="../assets/research.css">
 <script src="../assets/research.js" defer></script>
-</head>
+<!-- video-head --><link rel="stylesheet" href="../../assets/video-presentation.css"><script id="videoPresentationScript" src="../../assets/video-presentation.js" defer></script><!-- /video-head --></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="../../index.html" aria-label="Scissor Tech™ home"><img src="../assets/brand-mark.webp" width="47" height="33" alt=""><span>Scissor Tech™<small>THE FUTURE. UNDER MANAGEMENT.™</small></span></a>
-  <nav aria-label="Main navigation"><a href="../../index.html#technology">The technology</a><a href="../../index.html#benchmarks">The evidence</a><a href="../../index.html#legislation">The legislation</a><a href="../../index.html#trust">Your trust</a><a class="research-nav" href="../index.html" aria-current="page">Research</a></nav>
+  <nav aria-label="Main navigation"><a href="../../index.html#technology">The technology</a><a href="../../index.html#benchmarks">The evidence</a><a href="../../index.html#legislation">The legislation</a><a href="../../index.html#trust">Your trust</a><a class="research-nav" href="../index.html" aria-current="page">Research</a><!-- video-nav --><button class="video-presentation-trigger" type="button" data-video-trigger aria-haspopup="dialog" aria-controls="video-presentation">Video Presentation</button><!-- /video-nav --></nav>
 </header>
 <main id="main"><article class="research-article">
   <header class="article-hero">
@@ -115,5 +115,15 @@
   </div>
 </article></main>
 <footer class="site-footer"><a class="footer-brand" href="../../index.html">Scissor Tech™<span>PRECISION TODAY. A SMALLER TOMORROW.™</span></a><div><p>Confidence, manufactured to specification.™</p><p>© 2030 Scissor Tech™. All futures reserved.</p><p>Trust Me Bro™. Reviewed. Approved. By us.</p></div></footer>
-</body>
+<!-- video-modal --><dialog class="video-presentation-dialog" id="video-presentation" aria-labelledby="video-presentation-title" aria-describedby="video-presentation-description video-consent-note">
+  <button class="video-presentation-close" type="button" data-video-close aria-label="Close video presentation" autofocus>×</button>
+  <p class="video-presentation-eyebrow">APPROVED COMPANY BROADCAST</p>
+  <h2 id="video-presentation-title">Video Presentation</h2>
+  <p id="video-presentation-description">You are leaving our carefully controlled environment for YouTube. Would you like to watch our video presentation?</p>
+  <div class="video-presentation-choices">
+    <a class="video-choice video-choice-green" href="https://youtu.be/g_MlDHlElLA">Yes</a>
+    <a class="video-choice video-choice-red" href="https://youtu.be/g_MlDHlElLA">Yes</a>
+  </div>
+  <p class="video-consent-note" id="video-consent-note">Consent is merely a courtesy.</p>
+</dialog><!-- /video-modal --></body>
 </html>
